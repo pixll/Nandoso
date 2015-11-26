@@ -156,3 +156,5 @@ C:\Users\Steven.Castle\Documents\GitHubVisualStudio\Nandoso\Nandoso\bin\System.W
 C:\Users\Steven.Castle\Documents\GitHubVisualStudio\Nandoso\Nandoso\obj\Debug\Nandoso.csprojResolveAssemblyReference.cache
 C:\Users\Steven.Castle\Documents\GitHubVisualStudio\Nandoso\Nandoso\obj\Debug\Nandoso.dll
 C:\Users\Steven.Castle\Documents\GitHubVisualStudio\Nandoso\Nandoso\obj\Debug\Nandoso.pdb
+C:\Users\Steven.Castle\Documents\GitHubVisualStudio\Nandoso\Nandoso\bin\MySql.Data.dll
+C:\Users\Steven.Castle\Documents\GitHubVisualStudio\Nandoso\Nandoso\bin\MySql.Data.Entity.EF6.dll
