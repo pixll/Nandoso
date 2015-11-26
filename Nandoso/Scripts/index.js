@@ -6,7 +6,6 @@
 
 
 function setUpSpecials() {
-    alert("Hi");
     document.getElementById("contentbody").innerHTML='<table class="table table-striped spaced-table"><thead><tr><th>Name</th><th>Description</th><th>Price</th></tr></thead><tbody id="specialsList"></tbody></table>';
     loadSpecials();
 }

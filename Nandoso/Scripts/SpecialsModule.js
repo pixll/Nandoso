@@ -15,8 +15,27 @@ var SpecialsModule = (function () {
 
             $.ajax({
                 type: "GET",
-                dataType: "jsonp",
-                url: "http://api.uinames.com/?amount=25",
+                dataType: "json",
+                url: "https://nandoso755.azurewebsites.net/api/Specials",
+                success: function (data) {
+                    console.log(data);
+                    callback(data);
+                }
+            });
+
+        }
+    };
+}());
+
+var FeedbackModule = (function () {
+    // Return anything that you want to expose outside the closure
+    return {
+        getFeedback: function (callback) {
+
+            $.ajax({
+                type: "GET",
+                dataType: "json",
+                url: "https://nandoso755.azurewebsites.net/api/Feedback",
                 success: function (data) {
                     console.log(data);
                     callback(data);
