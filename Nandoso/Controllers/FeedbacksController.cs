@@ -8,49 +8,48 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using System.Web.Http.Description;
-using System.Web.Mvc;
 using Nandoso.Models;
 
 namespace Nandoso.Controllers
 {
-    public class SpecialsController : ApiController
+    public class FeedbacksController : ApiController
     {
         private NandosoContext db = new NandosoContext();
 
-        // GET: api/Special
-        public IQueryable<Special> GetSpecial()
+        // GET: api/Feedbacks
+        public IQueryable<Feedback> GetFeedbacks()
         {
-            return db.Specials;
+            return db.Feedbacks;
         }
 
-        // GET: api/Special/5
-        [ResponseType(typeof(Special))]
-        public IHttpActionResult GetSpecial(int id)
+        // GET: api/Feedbacks/5
+        [ResponseType(typeof(Feedback))]
+        public IHttpActionResult GetFeedback(int id)
         {
-            Special specials = db.Specials.Find(id);
-            if (specials == null)
+            Feedback feedback = db.Feedbacks.Find(id);
+            if (feedback == null)
             {
                 return NotFound();
             }
 
-            return Ok(specials);
+            return Ok(feedback);
         }
 
-        // PUT: api/Special/5
+        // PUT: api/Feedbacks/5
         [ResponseType(typeof(void))]
-        public IHttpActionResult PutSpecial(int id, Special specials)
+        public IHttpActionResult PutFeedback(int id, Feedback feedback)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            if (id != specials.ID)
+            if (id != feedback.FeedbackID)
             {
                 return BadRequest();
             }
 
-            db.Entry(specials).State = EntityState.Modified;
+            db.Entry(feedback).State = EntityState.Modified;
 
             try
             {
@@ -58,7 +57,7 @@ namespace Nandoso.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!SpecialExists(id))
+                if (!FeedbackExists(id))
                 {
                     return NotFound();
                 }
@@ -71,35 +70,35 @@ namespace Nandoso.Controllers
             return StatusCode(HttpStatusCode.NoContent);
         }
 
-        // POST: api/Special
-        [ResponseType(typeof(Special))]
-        public IHttpActionResult PostSpecial(Special specials)
+        // POST: api/Feedbacks
+        [ResponseType(typeof(Feedback))]
+        public IHttpActionResult PostFeedback(Feedback feedback)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            db.Specials.Add(specials);
+            db.Feedbacks.Add(feedback);
             db.SaveChanges();
 
-            return CreatedAtRoute("DefaultApi", new { id = specials.ID }, specials);
+            return CreatedAtRoute("DefaultApi", new { id = feedback.FeedbackID }, feedback);
         }
 
-        // DELETE: api/Special/5
-        [ResponseType(typeof(Special))]
-        public IHttpActionResult DeleteSpecial(int id)
+        // DELETE: api/Feedbacks/5
+        [ResponseType(typeof(Feedback))]
+        public IHttpActionResult DeleteFeedback(int id)
         {
-            Special specials = db.Specials.Find(id);
-            if (specials == null)
+            Feedback feedback = db.Feedbacks.Find(id);
+            if (feedback == null)
             {
                 return NotFound();
             }
 
-            db.Specials.Remove(specials);
+            db.Feedbacks.Remove(feedback);
             db.SaveChanges();
 
-            return Ok(specials);
+            return Ok(feedback);
         }
 
         protected override void Dispose(bool disposing)
@@ -111,9 +110,9 @@ namespace Nandoso.Controllers
             base.Dispose(disposing);
         }
 
-        private bool SpecialExists(int id)
+        private bool FeedbackExists(int id)
         {
-            return db.Specials.Count(e => e.ID == id) > 0;
+            return db.Feedbacks.Count(e => e.FeedbackID == id) > 0;
         }
     }
 }

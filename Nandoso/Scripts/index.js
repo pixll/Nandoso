@@ -1,13 +1,29 @@
 ﻿// This event triggers on page load
 
-document.addEventListener("DOMContentLoaded", function () {
+/*document.addEventListener("DOMContentLoaded", function () {
     loadSpecials();
-});
+});*/
+
+
+function setUpSpecials() {
+    alert("Hi");
+    document.getElementById("contentbody").innerHTML='<table class="table table-striped spaced-table"><thead><tr><th>Name</th><th>Description</th><th>Price</th></tr></thead><tbody id="specialsList"></tbody></table>';
+    loadSpecials();
+}
+
+function setUpFeedback() {
+    document.getElementById("contentbody").innerHTML='<table class="table table-striped spaced-table"><thead><tr><th>Name</th><th>Description</th><th>Price</th></tr></thead><tbody id="specialsList"></tbody></table>';
+    loadFeedback();
+}
+
+function loadFeedback() {
+
+}
 
 function loadSpecials() {
 
     // We need a reference to the div/table that we are going to chuck our data into
-    var specialsTable = document.getElementById("specialstbl");
+    var specialsTable = document.getElementById("specialsList");
 
     SpecialsModule.getSpecials(function (specialsList) {
         setupSpecialsTable(specialsList);

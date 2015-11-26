@@ -56,5 +56,6 @@ namespace Nandoso.Models
 
         }
 
+        public System.Data.Entity.DbSet<Nandoso.Models.Feedback> Feedbacks { get; set; }
     }
 }
