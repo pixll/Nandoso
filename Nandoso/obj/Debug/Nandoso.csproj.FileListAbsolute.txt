@@ -158,3 +158,6 @@ C:\Users\Steven.Castle\Documents\GitHubVisualStudio\Nandoso\Nandoso\obj\Debug\Na
 C:\Users\Steven.Castle\Documents\GitHubVisualStudio\Nandoso\Nandoso\obj\Debug\Nandoso.pdb
 C:\Users\Steven.Castle\Documents\GitHubVisualStudio\Nandoso\Nandoso\bin\MySql.Data.dll
 C:\Users\Steven.Castle\Documents\GitHubVisualStudio\Nandoso\Nandoso\bin\MySql.Data.Entity.EF6.dll
+C:\Users\Steven.Castle\Documents\GitHubVisualStudio\Nandoso\Nandoso\bin\System.Web.Cors.dll
+C:\Users\Steven.Castle\Documents\GitHubVisualStudio\Nandoso\Nandoso\bin\System.Web.Http.Cors.dll
+C:\Users\Steven.Castle\Documents\GitHubVisualStudio\Nandoso\Nandoso\bin\System.Web.Http.Cors.xml

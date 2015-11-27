@@ -53,6 +53,10 @@ namespace Nandoso.Models
                 specials.ForEach(s => context.Specials.AddOrUpdate(p => p.Description, s));
                 context.SaveChanges();
 
+
+
+
+
             }
 
         }
