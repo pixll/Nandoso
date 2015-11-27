@@ -6,12 +6,12 @@
 
 
 function setUpSpecials() {
-    document.getElementById("contentbody").innerHTML='<h2>Specials</h2></br><table class="table table-striped spaced-table"><thead><tr><th>Name</th><th>Description</th><th>Price</th></tr></thead><tbody id="specialsList"></tbody></table>';
+    document.getElementById("contentbody").innerHTML = '<br><h2>Specials</h2></br><table class="table table-striped spaced-table"><thead><tr><th>Name</th><th>Description</th><th>Price</th></tr></thead><tbody id="specialsList"></tbody></table>';
     loadSpecials();
 }
 
 function setUpFeedback() {
-    document.getElementById("contentbody").innerHTML = '<h2>Feedback</h2><br><input type="text" id="fname" placeholder="Enter your name"><input type="text" id="fcomment" placeholder="Please give us your feedback"><button onclick="submitFeedback()">Submit</button><table class="table table-striped spaced-table"><thead><tr><th>Name</th><th>Description</th><th>Price</th></tr></thead><tbody id="feedbackList"></tbody></table>';
+    document.getElementById("contentbody").innerHTML = '<br><h2>Feedback</h2><br><input type="text" id="fname" placeholder="Enter your name"><input type="text" id="fcomment" placeholder="Please give us your feedback"><button onclick="submitFeedback()">Submit</button><table class="table table-striped spaced-table"><thead><tr><th>Name</th><th>Description</th><th>Price</th></tr></thead><tbody id="feedbackList"></tbody></table>';
     loadFeedback();
 }
 

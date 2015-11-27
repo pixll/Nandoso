@@ -1,9 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <parameters>
+  <parameter name="DefaultConnection-Web.config Connection String" description="DefaultConnection Connection String used in web.config by the application to access the database." defaultValue="Data Source=(LocalDb)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\aspnet-Nandoso-20151126102400.mdf;Initial Catalog=aspnet-Nandoso-20151126102400;Integrated Security=True" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Steven\.Castle\\Documents\\GitHubVisualStudio\\Nandoso\\Nandoso\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
   <parameter name="NandosoContext-Web.config Connection String" description="NandosoContext Connection String used in web.config by the application to access the database." defaultValue="Data Source=(localdb)\MSSQLLocalDB; Initial Catalog=NandosoContext-20151127013224; Integrated Security=True; MultipleActiveResultSets=True; AttachDbFilename=|DataDirectory|NandosoContext-20151127013224.mdf" tags="SqlConnectionString">
     <parameterEntry kind="XmlFile" scope="C:\\Users\\Steven\.Castle\\Documents\\GitHubVisualStudio\\Nandoso\\Nandoso\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='NandosoContext']/@connectionString" />
   </parameter>
-  <parameter name="DefaultConnection-Web.config Connection String" description="DefaultConnection Connection String used in web.config by the application to access the database." defaultValue="DefaultConnection_ConnectionString" tags="SqlConnectionString">
-    <parameterEntry kind="XmlFile" scope="C:\\Users\\Steven\.Castle\\Documents\\GitHubVisualStudio\\Nandoso\\Nandoso\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  <parameter name="Nandoso.Models.ApplicationDbContext-Web.config Connection String" description="Nandoso.Models.ApplicationDbContext Connection String used in web.config by the application to access the database." defaultValue="Nandoso.Models.ApplicationDbContext_ConnectionString" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Steven\.Castle\\Documents\\GitHubVisualStudio\\Nandoso\\Nandoso\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='Nandoso.Models.ApplicationDbContext']/@connectionString" />
   </parameter>
 </parameters>

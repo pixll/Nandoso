@@ -16,7 +16,7 @@ var SpecialsModule = (function () {
             $.ajax({
                 type: "GET",
                 dataType: "json",
-                url: "https://nandoso755.azurewebsites.net/api/Specials",
+                url: "~/api/Specials",
                 success: function (data) {
                     console.log(data);
                     callback(data);
@@ -35,7 +35,7 @@ var FeedbackModule = (function () {
             $.ajax({
                 type: "GET",
                 dataType: "json",
-                url: "https://nandoso755.azurewebsites.net/api/Feedback",
+                url: "~/api/Feedback",
                 success: function (data) {
                     console.log(data);
                     callback(data);
